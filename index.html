@@ -1,15 +1,28 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="utf-8">
-    <title> Bông hoa đẹp nhất</title></title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Bông hoa đẹp nhất</title>
+</head>
+<body>
     <h1>Bông hoa đẹp nhất</h1>
+
     <h3>Chèn hình ảnh</h3>
-    <a href="#">
-      <img src=" hoa-hong-phan.jpg" alt="Hoa hồng phấn" width="300">
-      <br>
-      Click me!
-  </body>
+
+    <img src="hoa-hong-phan.jpg" alt="Hoa hồng phấn" width="300">
+
+    <br><br>
+
+    <button onclick="hienChu()">Click me!</button>
+
+    <p id="noidung" style="display:none; color: red;">
+        🎉 Chúc em cả năm đều vui cười !
+    </p>
+
+    <script>
+        function hienChu() {
+            document.getElementById("noidung").style.display = "block";
+        }
+    </script>
+</body>
 </html>
